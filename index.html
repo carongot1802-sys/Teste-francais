@@ -1,0 +1,617 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Kiểm tra 35 câu về 9 thì tiếng Pháp trình độ A2–B1, có chấm điểm, đáp án và giải thích.">
+<title>Le Temps retrouvé</title>
+<style>
+:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{margin:0;-webkit-text-size-adjust:100%}
+img{max-width:100%}
+[hidden]{display:none!important}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Kalam:wght@400;700&display=swap">
+<style>
+/* Layout: one centred column. Skin "école" = a ruled exercise book with a red margin; skin "musée" = framed gallery cartels on a wall. */
+:root{
+  --bg:#eef1f6; --paper:#ffffff; --ink:#1c2540; --muted:#5d6683; --line:#d4dcea;
+  --accent:#2347a8; --accent-ink:#ffffff; --soft:#e6ecfa; --mark:#c62f3b; --margin:#eaa7ad; --ruled:#e3e9f4;
+  --good:#1f7a4d; --good-soft:#e2f2e9; --bad:#c62f3b; --bad-soft:#fbe6e8; --half:#9b6a0c; --half-soft:#fbf0d9;
+  --display:"Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --body:"Public Sans", "Segoe UI", system-ui, sans-serif;
+  --hand:"Kalam", "Comic Sans MS", cursive;
+  --radius:10px; --display-weight:800; --display-track:-0.02em;
+}
+:root[data-skin="musee"]{
+  --bg:#d8dedb; --paper:#fbfaf7; --ink:#1c2220; --muted:#59625e; --line:#c6cdc9;
+  --accent:#7a2233; --accent-ink:#ffffff; --soft:#f2e5e7; --mark:#7a2233; --margin:#b0965c; --ruled:transparent;
+  --good:#2c6e49; --good-soft:#e3efe7; --bad:#a3283a; --bad-soft:#f6e3e5; --half:#8d640e; --half-soft:#f6edd8;
+  --display:"Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --radius:2px; --display-weight:600; --display-track:0;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#10141f; --paper:#181e2d; --ink:#e4e8f3; --muted:#98a1bb; --line:#2b3449;
+    --accent:#86a3f7; --accent-ink:#0d1222; --soft:#1f2a47; --mark:#ff7b84; --margin:#6b3a46; --ruled:#20283b;
+    --good:#5fcf95; --good-soft:#15301f; --bad:#ff7b84; --bad-soft:#3a1a20; --half:#e3b55a; --half-soft:#352a12;
+    color-scheme:dark;
+  }
+  :root[data-skin="musee"]:not([data-theme="light"]){
+    --bg:#121715; --paper:#1c2320; --ink:#e9e6de; --muted:#a0a8a3; --line:#2f3934;
+    --accent:#e0838e; --accent-ink:#1a0d10; --soft:#36242a; --mark:#e0838e; --margin:#c9a961; --ruled:transparent;
+    --good:#6fcf98; --good-soft:#16301f; --bad:#ec7d8a; --bad-soft:#3a1a1f; --half:#e0b65d; --half-soft:#342912;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#10141f; --paper:#181e2d; --ink:#e4e8f3; --muted:#98a1bb; --line:#2b3449;
+  --accent:#86a3f7; --accent-ink:#0d1222; --soft:#1f2a47; --mark:#ff7b84; --margin:#6b3a46; --ruled:#20283b;
+  --good:#5fcf95; --good-soft:#15301f; --bad:#ff7b84; --bad-soft:#3a1a20; --half:#e3b55a; --half-soft:#352a12;
+  color-scheme:dark;
+}
+:root[data-theme="dark"][data-skin="musee"]{
+  --bg:#121715; --paper:#1c2320; --ink:#e9e6de; --muted:#a0a8a3; --line:#2f3934;
+  --accent:#e0838e; --accent-ink:#1a0d10; --soft:#36242a; --mark:#e0838e; --margin:#c9a961; --ruled:transparent;
+  --good:#6fcf98; --good-soft:#16301f; --bad:#ec7d8a; --bad-soft:#3a1a1f; --half:#e0b65d; --half-soft:#342912;
+}
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.55;transition:background .35s ease}
+.wrap{max-width:780px;margin:0 auto;padding-block:20px 64px;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px))}
+h1,h2,h3{font-family:var(--display);font-weight:var(--display-weight);letter-spacing:var(--display-track);text-wrap:balance;margin:0;line-height:1.1}
+button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.muted{color:var(--muted)}
+.eyebrow{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:600}
+
+/* top bar */
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:22px;flex-wrap:wrap}
+.brand{display:flex;align-items:baseline;gap:10px}
+.brand b{font-family:var(--display);font-weight:var(--display-weight);font-size:20px;letter-spacing:var(--display-track)}
+.brand span{font-size:13px;color:var(--muted)}
+.skin-tag{font-size:13px;color:var(--muted);border:1px solid var(--line);padding:4px 10px;border-radius:999px;background:var(--paper)}
+
+/* buttons */
+.btn{border:1px solid var(--accent);background:var(--accent);color:var(--accent-ink);padding:11px 20px;border-radius:var(--radius);font-weight:600;transition:transform .12s ease, filter .15s}
+.btn:hover{filter:brightness(1.08)}
+.btn:active{transform:translateY(1px)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn.ghost:hover{border-color:var(--accent);color:var(--accent)}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+
+/* start */
+.hero{display:grid;gap:14px;margin-bottom:26px}
+.hero h1{font-size:clamp(38px,8vw,64px)}
+:root[data-skin="musee"] .hero h1{font-style:italic}
+.hero p{margin:0;max-width:60ch;font-size:17px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font-size:13px;border:1px solid var(--line);background:var(--paper);padding:4px 10px;border-radius:999px;color:var(--muted)}
+.parcours{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:8px 0 22px}
+@media (max-width:620px){.parcours{grid-template-columns:1fr}}
+.pc{position:relative;text-align:left;border:1.5px solid var(--line);background:var(--paper);border-radius:var(--radius);padding:18px 18px 16px;display:grid;gap:8px;min-width:0;transition:border-color .2s, box-shadow .2s}
+.pc:hover{border-color:var(--accent)}
+.pc[aria-pressed="true"]{border-color:var(--accent);box-shadow:0 0 0 3px var(--soft)}
+.pc .fr{font-family:var(--hand);color:var(--mark);font-size:15px}
+.pc h3{font-size:24px}
+.pc p{margin:0;font-size:14.5px;color:var(--muted)}
+.pc .tick{position:absolute;top:14px;right:14px;width:22px;height:22px;border-radius:50%;border:1.5px solid var(--line);display:grid;place-items:center;font-size:13px}
+.pc[aria-pressed="true"] .tick{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.pc .swatch{height:46px;border-radius:calc(var(--radius) - 2px);border:1px solid var(--line);margin-bottom:4px}
+.sw-ecole{background:#fff repeating-linear-gradient(to bottom, transparent 0 9px, #cfdaf0 9px 10px);position:relative}
+.sw-ecole::after{content:"";position:absolute;left:18px;top:0;bottom:0;width:1.5px;background:#e58a92}
+.sw-musee{background:#2f3a35;display:flex;align-items:center;justify-content:center;gap:10px}
+.sw-musee i{display:block;width:26px;height:20px;background:#d9c9a3;outline:2px solid #b0965c;outline-offset:2px}
+.sw-musee i:nth-child(2){width:18px;height:26px;background:#a55a63}
+.tenses{display:flex;flex-wrap:wrap;gap:6px 6px;margin-top:4px}
+.tenses span{font-size:12.5px;padding:3px 9px;border-radius:999px;background:var(--soft);color:var(--ink)}
+.start-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+
+/* quiz */
+.progress{height:4px;background:var(--line);border-radius:2px;overflow:hidden;margin-bottom:16px}
+.progress i{display:block;height:100%;background:var(--accent);transition:width .3s ease}
+.qmeta{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:10px;flex-wrap:wrap}
+.qmeta .count{font-family:var(--display);font-size:22px;font-weight:var(--display-weight)}
+.qmeta .count small{font-family:var(--body);font-size:14px;color:var(--muted);font-weight:500}
+
+.sheet{position:relative;background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:22px 22px 20px 22px;min-width:0}
+:root:not([data-skin="musee"]) .sheet{padding-left:64px;background-image:repeating-linear-gradient(to bottom, transparent 0 31px, var(--ruled) 31px 32px);background-position:0 14px}
+:root:not([data-skin="musee"]) .sheet::before{content:"";position:absolute;left:46px;top:0;bottom:0;width:1.5px;background:var(--margin)}
+.sheet .num{position:absolute;left:0;top:20px;width:46px;text-align:center;font-family:var(--hand);font-weight:700;font-size:22px;color:var(--mark)}
+:root[data-skin="musee"] .sheet{outline:1px solid var(--margin);outline-offset:6px;margin:7px;box-shadow:0 18px 40px -24px rgba(0,0,0,.45)}
+:root[data-skin="musee"] .sheet .num{display:none}
+.cartel{display:none}
+:root[data-skin="musee"] .cartel{display:flex;justify-content:space-between;gap:10px;border-bottom:1px solid var(--line);padding-bottom:10px;margin-bottom:14px;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.qtype{display:inline-block;font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);margin-bottom:6px}
+.qprompt{font-size:16px;margin:0 0 14px;color:var(--muted)}
+.qsentence{font-size:20px;line-height:1.6;margin:0 0 18px;font-weight:500}
+:root[data-skin="musee"] .qsentence{font-family:var(--display);font-size:25px;font-weight:600;line-height:1.4}
+.blank{display:inline-block;min-width:4.5em;border-bottom:2px solid var(--accent);margin:0 2px}
+.qsentence input{font:inherit;font-weight:600;color:var(--accent);background:var(--soft);border:none;border-bottom:2px solid var(--accent);border-radius:4px 4px 0 0;padding:1px 8px;width:11em;max-width:100%}
+.qsentence input:focus{outline:none;background:var(--paper);box-shadow:0 0 0 2px var(--soft)}
+.verb{color:var(--muted);font-style:italic}
+
+.opts{display:grid;gap:10px}
+.opt{display:flex;gap:12px;align-items:flex-start;text-align:left;border:1.5px solid var(--line);background:var(--paper);border-radius:var(--radius);padding:12px 14px;transition:border-color .15s, background .15s}
+.opt:hover{border-color:var(--accent)}
+.opt .k{flex:none;width:26px;height:26px;border-radius:50%;border:1.5px solid var(--line);display:grid;place-items:center;font-size:13px;font-weight:700;color:var(--muted)}
+.opt[aria-checked="true"]{border-color:var(--accent);background:var(--soft)}
+.opt[aria-checked="true"] .k{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.opt span:last-child{min-width:0}
+
+textarea.free{width:100%;font:inherit;font-size:17px;color:var(--ink);background:var(--paper);border:1.5px solid var(--line);border-radius:var(--radius);padding:12px 14px;resize:vertical;min-height:84px}
+textarea.free:focus{outline:none;border-color:var(--accent)}
+.accents{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px;align-items:center}
+.accents small{color:var(--muted);margin-right:4px}
+.accents button{min-width:34px;height:32px;border:1px solid var(--line);background:var(--paper);border-radius:6px;font-size:16px}
+.accents button:hover{border-color:var(--accent);color:var(--accent)}
+
+.nav{display:flex;justify-content:space-between;gap:10px;margin-top:18px;flex-wrap:wrap}
+.nav .right{display:flex;gap:10px;flex-wrap:wrap}
+.kbd{font-size:12.5px;color:var(--muted);margin-top:10px}
+
+.map{margin-top:26px;background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:14px}
+.map h3{font-family:var(--body);font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(38px,1fr));gap:6px}
+.tile{height:36px;border:1px solid var(--line);background:transparent;border-radius:6px;font-size:13.5px;font-variant-numeric:tabular-nums;color:var(--muted)}
+.tile[data-done="1"]{background:var(--soft);color:var(--ink);border-color:transparent}
+.tile[aria-current="true"]{border:2px solid var(--accent);color:var(--accent);font-weight:700}
+.tile[data-res="ok"]{background:var(--good-soft);color:var(--good);border-color:transparent}
+.tile[data-res="half"]{background:var(--half-soft);color:var(--half);border-color:transparent}
+.tile[data-res="ko"]{background:var(--bad-soft);color:var(--bad);border-color:transparent}
+
+.confirm{margin-top:14px;padding:14px 16px;border:1.5px dashed var(--mark);border-radius:var(--radius);background:var(--paper);display:grid;gap:10px}
+.confirm p{margin:0}
+
+/* results */
+.bulletin{display:grid;grid-template-columns:auto 1fr;gap:22px;align-items:center;background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:22px;margin-bottom:22px}
+@media (max-width:560px){.bulletin{grid-template-columns:1fr}}
+.note{position:relative;width:150px;height:150px;display:grid;place-items:center;text-align:center}
+.note svg{position:absolute;inset:0;width:100%;height:100%}
+.note b{font-family:var(--hand);font-size:46px;color:var(--mark);line-height:1}
+.note small{display:block;font-family:var(--hand);font-size:18px;color:var(--mark)}
+:root[data-skin="musee"] .note b,:root[data-skin="musee"] .note small{font-family:var(--display);font-style:italic}
+.bulletin h2{font-size:30px;margin:4px 0 6px}
+.bulletin p{margin:0}
+:root[data-skin="musee"] .bulletin{border-style:dashed;border-width:1.5px;border-color:var(--margin)}
+.stats{display:flex;gap:16px;flex-wrap:wrap;margin-top:10px;font-size:14px}
+.stats span b{font-variant-numeric:tabular-nums}
+.dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:5px;vertical-align:1px}
+
+.section{margin:30px 0 12px;display:flex;align-items:baseline;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.section h2{font-size:26px}
+.bars{display:grid;gap:10px;background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px}
+.bar{display:grid;grid-template-columns:minmax(0,11em) 1fr 4.5em;gap:12px;align-items:center;font-size:14.5px}
+@media (max-width:520px){.bar{grid-template-columns:1fr 4em}.bar .track{grid-column:1 / -1;grid-row:2}}
+.bar .track{height:9px;background:var(--line);border-radius:5px;overflow:hidden}
+.bar .track i{display:block;height:100%;border-radius:5px}
+.bar .v{text-align:right;font-variant-numeric:tabular-nums;color:var(--muted)}
+.advice{margin-top:12px;font-size:15px}
+
+.memo{display:grid;gap:8px}
+.memo details{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:0 16px}
+.memo summary{cursor:pointer;padding:13px 0;font-weight:600;display:flex;justify-content:space-between;gap:10px;list-style:none}
+.memo summary::-webkit-details-marker{display:none}
+.memo summary::after{content:"+";color:var(--accent);font-weight:700}
+.memo details[open] summary::after{content:"–"}
+.memo summary em{font-style:normal;font-weight:400;color:var(--muted);font-size:14px}
+.memo .body{padding:0 0 14px;font-size:15px;display:grid;gap:6px}
+.memo .body p{margin:0}
+.memo .ex{font-family:var(--hand);color:var(--mark);font-size:16.5px}
+:root[data-skin="musee"] .memo .ex{font-family:var(--display);font-style:italic;font-size:19px}
+
+.filters{display:flex;gap:6px;flex-wrap:wrap}
+.filters button{border:1px solid var(--line);background:var(--paper);padding:6px 12px;border-radius:999px;font-size:13.5px}
+.filters button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.review{display:grid;gap:12px}
+.rv{background:var(--paper);border:1px solid var(--line);border-left-width:4px;border-radius:var(--radius);padding:14px 16px;display:grid;gap:8px;min-width:0}
+.rv[data-res="ok"]{border-left-color:var(--good)}
+.rv[data-res="half"]{border-left-color:var(--half)}
+.rv[data-res="ko"],.rv[data-res="blank"]{border-left-color:var(--bad)}
+.rv-head{display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-size:13px}
+.pill{padding:2px 9px;border-radius:999px;font-weight:600;font-size:12.5px}
+.pill.ok{background:var(--good-soft);color:var(--good)}
+.pill.half{background:var(--half-soft);color:var(--half)}
+.pill.ko{background:var(--bad-soft);color:var(--bad)}
+.pill.t{background:var(--soft);color:var(--ink);font-weight:500}
+.rv .s{font-size:16.5px;font-weight:500;margin:0}
+.rv dl{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;margin:0;font-size:15px}
+.rv dt{color:var(--muted)}
+.rv dd{margin:0;min-width:0;overflow-wrap:anywhere}
+.rv .yours{text-decoration:line-through;text-decoration-color:var(--bad)}
+.rv[data-res="ok"] .yours{text-decoration:none}
+.rv .right{color:var(--good);font-weight:600}
+.rv .why{font-size:15px;background:var(--bg);border-radius:6px;padding:10px 12px;margin:0}
+.end-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}
+
+.fade{animation:fade .28s ease}
+@keyframes fade{from{opacity:.4;transform:translateY(4px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<div class="wrap" id="app"></div>
+
+<script>
+const TENSES = {
+  present:{fr:"Présent", vi:"Hiện tại", f:"Động từ -er: -e, -es, -e, -ons, -ez, -ent. Nhóm 2 (-ir): -is, -is, -it, -issons, -issez, -issent. Nhiều động từ bất quy tắc cần thuộc: prendre, dire, vouloir, faire…", u:"Thói quen, sự thật, trạng thái hiện tại, lịch trình cố định.", ex:"Je prends le bus tous les matins."},
+  progressif:{fr:"Présent progressif", vi:"Hiện tại tiếp diễn", f:"être (hiện tại) + en train de + nguyên mẫu. « de » thành « d' » trước nguyên âm.", u:"Nhấn mạnh hành động đang diễn ra đúng lúc nói.", ex:"Le guide est en train d'expliquer le tableau."},
+  pc:{fr:"Passé composé", vi:"Quá khứ kép", f:"avoir / être (hiện tại) + phân từ quá khứ. Dùng être với động từ chuyển động (aller, venir, arriver, partir, naître, mourir, rester…) và mọi động từ đại từ; khi đó phân từ hợp giống số với chủ ngữ. Với avoir, phân từ hợp với COD đứng trước.", u:"Sự kiện đã xảy ra và kết thúc, các bước nối tiếp trong câu chuyện.", ex:"Nous sommes allés au musée et j'ai vu Van Gogh."},
+  imparfait:{fr:"Imparfait", vi:"Quá khứ chưa hoàn thành", f:"Gốc của nous ở hiện tại (bỏ -ons) + -ais, -ais, -ait, -ions, -iez, -aient. Ngoại lệ duy nhất: être → ét-.", u:"Miêu tả, bối cảnh, thói quen trong quá khứ, hành động đang diễn ra khi một sự kiện khác xen vào.", ex:"Il pleuvait quand nous sommes sortis."},
+  imperatif:{fr:"Impératif présent", vi:"Mệnh lệnh", f:"Chỉ ba ngôi tu, nous, vous, không có chủ ngữ. Động từ -er (và aller) bỏ -s ở ngôi tu. Bất quy tắc: sois / soyons / soyez, aie / ayons / ayez. Khẳng định: đại từ đứng sau, me → moi (Suis-moi).", u:"Ra lệnh, yêu cầu, khuyên, rủ rê (ngôi nous).", ex:"Ne touchez pas les tableaux !"},
+  futur:{fr:"Futur simple", vi:"Tương lai đơn", f:"Nguyên mẫu (bỏ -e với -re) + -ai, -as, -a, -ons, -ez, -ont. Gốc bất quy tắc: ir- (aller), ser- (être), aur- (avoir), fer- (faire), pourr-, verr-, viendr-, voudr-.", u:"Dự đoán, kế hoạch xa hơn, mệnh đề kết quả sau si + présent.", ex:"L'année prochaine, nous irons en France."},
+  fa:{fr:"Futur antérieur", vi:"Tương lai hoàn thành", f:"avoir / être ở futur simple + phân từ quá khứ (quy tắc hợp giống số như passé composé).", u:"Hành động sẽ hoàn tất trước một mốc hoặc một hành động khác trong tương lai, thường sau quand, dès que, lorsque, après que.", ex:"Quand tu auras fini, tu pourras sortir."},
+  fp:{fr:"Futur proche", vi:"Tương lai gần", f:"aller (hiện tại) + nguyên mẫu. Phủ định bao quanh aller; đại từ đứng trước nguyên mẫu.", u:"Việc sắp xảy ra, dự định gần, điều chắc chắn sẽ đến.", ex:"Je vais y retourner samedi."},
+  pr:{fr:"Passé récent", vi:"Quá khứ gần", f:"venir (hiện tại) + de + nguyên mẫu.", u:"Việc vừa mới xảy ra, thường đi với « à l'instant », « juste ».", ex:"Le groupe vient d'entrer dans la salle."}
+};
+const TYPE_LABEL = {qcm:"Trắc nghiệm", fill:"Chia động từ", tr:"Viết lại câu", wr:"Trả lời câu hỏi"};
+
+const SETS = {
+ecole:{ name:"Đời sống & trường học", fr:"Vie quotidienne et école", qs:[
+{t:"fill",k:"present",q:"Chia động từ trong ngoặc ở thì hiện tại.",s:"Le matin, je ___ (prendre) le bus de 7 h pour aller au lycée.",acc:["prends"],e:"Prendre là động từ bất quy tắc: je prends, tu prends, il prend, nous prenons, vous prenez, ils prennent. Ngôi je và tu đều kết thúc bằng -s."},
+{t:"qcm",k:"pc",q:"Chọn đáp án đúng.",s:"Hier, Linh ___ en retard au cours de maths.",o:["est arrivée","a arrivé","est arrivé","arrivait"],a:0,e:"Arriver là động từ chỉ sự di chuyển nên dùng trợ động từ être. Với être, phân từ hợp giống số với chủ ngữ: Linh là nữ nên thêm -e. « Arrivait » không hợp vì đây là một sự kiện đã xảy ra trọn vẹn, không phải bối cảnh."},
+{t:"qcm",k:"progressif",q:"Chọn cách diễn đạt hành động đang diễn ra.",s:"Ne fais pas de bruit, ma sœur ___ ses devoirs.",o:["est en train de faire","est en train de fait","a en train de faire","fait en train de"],a:0,e:"Présent progressif: être chia ở hiện tại + en train de + nguyên mẫu. Sau « de » luôn là nguyên mẫu (faire), và trợ động từ là être chứ không phải avoir."},
+{t:"fill",k:"imparfait",q:"Chia động từ ở thì imparfait.",s:"Quand j'étais petit, je ___ (jouer) au foot tous les mercredis.",acc:["jouais"],e:"« Tous les mercredis » diễn tả thói quen trong quá khứ nên dùng imparfait. Lấy gốc của nous ở hiện tại (nous jouons → jou-) rồi thêm -ais, -ais, -ait, -ions, -iez, -aient."},
+{t:"qcm",k:"imperatif",q:"Thầy giáo nói với cả lớp. Chọn câu mệnh lệnh đúng.",s:"« ___ vos livres à la page 32. »",o:["Ouvrez","Ouvrir","Vous ouvrez","Ouvrons"],a:0,e:"Impératif không có chủ ngữ. Thầy nói với nhiều học sinh nên dùng ngôi vous: Ouvrez. « Ouvrons » là ngôi nous, nghĩa là « chúng ta hãy mở », có cả người nói."},
+{t:"fill",k:"fp",q:"Chia động từ ở thì futur proche.",s:"Attention, le cours ___ (commencer) dans deux minutes !",acc:["va commencer"],e:"Futur proche = aller chia ở hiện tại + nguyên mẫu, dùng cho việc sắp xảy ra. « Le cours » là ngôi il nên dùng « va »."},
+{t:"fill",k:"pr",q:"Chia động từ ở thì passé récent.",s:"Tu cherches Minh ? Désolé, il ___ (sortir) à l'instant.",acc:["vient de sortir"],e:"Passé récent = venir chia ở hiện tại + de + nguyên mẫu, dùng cho việc vừa mới xảy ra. « À l'instant » (vừa xong) là dấu hiệu nhận biết quen thuộc."},
+{t:"qcm",k:"futur",q:"Chọn dạng futur simple đúng.",s:"L'année prochaine, nous ___ en France pour un échange scolaire.",o:["irons","allerons","irions","allions"],a:0,e:"Aller có gốc futur bất quy tắc ir-: j'irai, nous irons. « Irions » là conditionnel, còn « allions » là imparfait."},
+{t:"qcm",k:"fa",q:"Chọn thì phù hợp.",s:"Tu pourras sortir quand tu ___ tes devoirs.",o:["auras fini","finis","as fini","avais fini"],a:0,e:"Làm xong bài tập phải hoàn tất trước khi được ra ngoài (cũng ở tương lai), nên dùng futur antérieur: avoir ở futur simple + phân từ. Sau « quand » nói về tương lai, tiếng Pháp không dùng présent như tiếng Anh."},
+{t:"wr",k:"pc",q:"Trả lời bằng một câu hoàn chỉnh ở passé composé, dùng động từ « regarder ».",s:"Qu'est-ce que tu as fait le week-end dernier ?",must:["j'ai regardé"],m:"Le week-end dernier, j'ai regardé un film avec ma famille.",e:"Regarder dùng trợ động từ avoir: j'ai regardé. Phân từ của động từ nhóm -er kết thúc bằng -é có dấu."},
+{t:"qcm",k:"imparfait",q:"Chọn cặp động từ đúng.",s:"Je ___ mes devoirs quand le téléphone ___ .",o:["faisais / a sonné","ai fait / sonnait","faisais / sonnait","ai fait / a sonné"],a:0,e:"Hành động đang diễn ra làm nền (đang làm bài tập) dùng imparfait; sự kiện xen vào đột ngột (chuông reo) dùng passé composé. Đây là cặp kết hợp kinh điển của hai thì quá khứ."},
+{t:"fill",k:"present",q:"Chia động từ ở thì hiện tại.",s:"Nous ___ (finir) les cours à 16 h 30 le vendredi.",acc:["finissons"],e:"Finir thuộc nhóm 2, có -iss- ở số nhiều: je finis, nous finissons, vous finissez, ils finissent."},
+{t:"tr",k:"fp",q:"Viết lại câu ở thì futur proche.",s:"Je révise pour l'examen.",acc:["Je vais réviser pour l'examen."],e:"Giữ chủ ngữ, chia aller ở hiện tại (je vais) rồi để động từ chính ở nguyên mẫu: réviser."},
+{t:"qcm",k:"imperatif",q:"Bạn bảo em trai đừng đụng vào máy tính của mình. Chọn câu đúng.",s:"« ___ à mon ordinateur ! »",o:["Ne touche pas","Ne touches pas","Touche pas ne","Ne pas toucher"],a:0,e:"Ở impératif ngôi tu, động từ -er bỏ chữ -s: tu touches → touche. Phủ định bao quanh động từ: ne touche pas. « Ne pas toucher » là dạng biển báo chung, không dùng để nói trực tiếp với ai."},
+{t:"fill",k:"pc",q:"Chia động từ đại từ ở passé composé (điền cả đại từ phản thân).",s:"Ce matin, mes amies et moi, nous ___ (se lever) très tôt pour le cross du lycée.",acc:["nous sommes levées","nous sommes levés"],e:"Động từ đại từ luôn dùng être ở passé composé và giữ đại từ phản thân: nous nous sommes levé(e)s. Phân từ hợp số nhiều; nếu cả nhóm là nữ thì viết levées."},
+{t:"qcm",k:"pr",q:"Chọn đáp án phù hợp với ngữ cảnh.",s:"Le train ___ partir, tu l'as raté de peu !",o:["vient de","va","est en train de","venait de"],a:0,e:"Tàu vừa chạy, bạn lỡ trong gang tấc: hành động vừa hoàn tất nên dùng passé récent. « Va partir » là sắp chạy, mâu thuẫn với « tu l'as raté »."},
+{t:"fill",k:"futur",q:"Chia động từ ở thì futur simple.",s:"Selon la météo, il ___ (faire) beau demain.",acc:["fera"],e:"Faire có gốc futur bất quy tắc fer-: je ferai, il fera, nous ferons. Đây là một trong những gốc hay gặp nhất."},
+{t:"wr",k:"imparfait",q:"Miêu tả trường tiểu học của bạn bằng một câu ở imparfait, dùng cả « être » và « avoir ».",s:"Comment était ton école primaire ?",must:["était","avait"],m:"Mon école primaire était petite et elle avait un grand jardin.",e:"Miêu tả trong quá khứ dùng imparfait. Être có gốc bất quy tắc ét- (elle était); avoir chia bình thường: elle avait."},
+{t:"qcm",k:"pc",q:"Chọn phân từ đúng.",s:"Les photos de la fête ? Je les ai ___ sur le site du lycée.",o:["publiées","publié","publiés","publiais"],a:0,e:"Với avoir, phân từ hợp giống số với bổ ngữ trực tiếp (COD) khi COD đứng trước động từ. « Les » thay cho « les photos » (giống cái, số nhiều) nên viết publiées."},
+{t:"fill",k:"imperatif",q:"Chia động từ ở impératif (ngôi vous).",s:"___ (être) sages pendant la sortie, les enfants !",acc:["soyez"],e:"Être có impératif bất quy tắc: sois, soyons, soyez. Tương tự avoir: aie, ayons, ayez."},
+{t:"tr",k:"pc",q:"Viết lại câu ở thì passé composé.",s:"Elles vont au cinéma.",acc:["Elles sont allées au cinéma."],e:"Aller dùng trợ động từ être, nên phân từ hợp với chủ ngữ « elles »: allées (giống cái, số nhiều)."},
+{t:"qcm",k:"fa",q:"Chọn thì phù hợp.",s:"Quand tes parents rentreront, nous ___ déjà le ménage.",o:["aurons fini","finirons","avons fini","allons finir"],a:0,e:"« Déjà » cho thấy việc dọn dẹp sẽ xong trước lúc bố mẹ về (một mốc tương lai). Hành động hoàn tất trước một mốc tương lai dùng futur antérieur."},
+{t:"fill",k:"progressif",q:"Dùng cấu trúc « être en train de » để chia động từ.",s:"– Allô, tu peux parler ? – Pas maintenant, je ___ (manger) avec mes parents.",acc:["suis en train de manger"],e:"Nhấn mạnh hành động đang diễn ra đúng lúc nói: je suis en train de manger. « Je mange » cũng đúng ngữ pháp, nhưng đề yêu cầu cấu trúc tiếp diễn."},
+{t:"qcm",k:"imparfait",q:"Chọn đáp án đúng.",s:"Avant, nous ___ à la campagne ; maintenant, nous vivons à Hanoï.",o:["habitions","habitons","habiterons","habitâmes"],a:0,e:"« Avant » đối lập với « maintenant »: một tình trạng kéo dài trong quá khứ, dùng imparfait, ngôi nous đuôi -ions. « Habitâmes » là passé simple, chỉ gặp trong văn viết."},
+{t:"wr",k:"futur",q:"Trả lời bằng một câu ở futur simple, dùng động từ « étudier ».",s:"Que feras-tu après le baccalauréat ?",must:["j'étudierai"],m:"Après le baccalauréat, j'étudierai les relations internationales à l'université.",e:"Futur simple của động từ -er: nguyên mẫu + -ai, -as, -a, -ons, -ez, -ont. Étudier → j'étudierai (giữ chữ e của nguyên mẫu dù gần như không phát âm)."},
+{t:"qcm",k:"present",q:"Chọn dạng hiện tại đúng.",s:"Mes parents ___ que je dois dormir plus tôt.",o:["disent","disont","dirent","dient"],a:0,e:"Dire: je dis, tu dis, il dit, nous disons, vous dites, ils disent. Chú ý « vous dites », không phải « vous disez »."},
+{t:"fill",k:"fp",q:"Chia động từ ở futur proche, thể phủ định.",s:"Nous ___ (ne pas sortir) ce soir, il y a un contrôle demain.",acc:["n'allons pas sortir"],e:"Ở futur proche, ne... pas bao quanh aller đã chia, nguyên mẫu đứng sau: nous n'allons pas sortir."},
+{t:"tr",k:"pr",q:"Viết lại câu ở thì passé récent.",s:"J'ai reçu mes résultats d'examen (il y a une minute).",acc:["Je viens de recevoir mes résultats d'examen.","Je viens de recevoir mes résultats."],e:"Passé récent: venir ở hiện tại + de + nguyên mẫu. Recevoir trở về nguyên mẫu, không giữ phân từ « reçu »."},
+{t:"qcm",k:"imperatif",q:"Bạn của bạn không tìm thấy thư viện. Chọn câu đúng.",s:"« ___, c'est par ici ! »",o:["Suis-moi","Me suis","Suis-me","Suivez-me"],a:0,e:"Ở impératif khẳng định, đại từ đứng sau động từ, có gạch nối, và « me » đổi thành « moi »: Suis-moi. Ở thể phủ định đại từ đứng trước: Ne me suis pas."},
+{t:"fill",k:"imparfait",q:"Chia động từ ở thì imparfait.",s:"Il ___ (pleuvoir) quand nous sommes sortis du lycée.",acc:["pleuvait"],e:"Thời tiết là bối cảnh của sự kiện « sortir » nên dùng imparfait: il pleuvait. Pleuvoir chỉ chia ở ngôi il."},
+{t:"wr",k:"imperatif",q:"Bạn cùng lớp lo lắng vì mai thi. Cho bạn ấy một lời khuyên ở impératif (ngôi tu) với động từ « dormir ».",s:"Je suis stressé, l'examen est demain…",must:["dors"],m:"Dors bien ce soir et ne t'inquiète pas trop !",e:"Dormir ở impératif ngôi tu là « dors », giữ -s vì không phải động từ -er. Chỉ động từ -er (và aller) mới bỏ -s: mange, va."},
+{t:"qcm",k:"futur",q:"Chọn đáp án đúng.",s:"Si tu as besoin d'aide pour ton exposé, je ___ là.",o:["serai","serais","sera","suis été"],a:0,e:"Câu điều kiện có thật: si + présent → futur simple. Être có gốc futur ser-: je serai. « Serais » là conditionnel, đi với si + imparfait."},
+{t:"tr",k:"fa",q:"Nối hai câu thành một câu với « quand » và futur antérieur.",s:"Tu termines ton exposé. Ensuite, tu me l'enverras.",must:["quand tu auras terminé","tu me l'enverras"],m:"Quand tu auras terminé ton exposé, tu me l'enverras.",e:"Hành động xảy ra trước (terminer) chia ở futur antérieur: tu auras terminé. Hành động sau giữ futur simple: tu me l'enverras."},
+{t:"qcm",k:"pc",q:"Chọn câu đúng hoàn toàn.",s:"",o:["Hier, il faisait froid et je suis resté à la maison.","Hier, il faisait froid et j'ai resté à la maison.","Hier, il fesait froid et je suis resté à la maison.","Hier, il fera froid et je suis resté à la maison."],a:0,e:"Rester dùng trợ động từ être: je suis resté. Imparfait của faire viết là « faisait » dù phát âm gần « fesait ». « Fera » là tương lai, không hợp với « hier »."},
+{t:"wr",k:"pc",q:"Kể một kỷ niệm ở trường bằng một câu: imparfait để miêu tả (« j'avais … ans ») và passé composé cho sự kiện (« j'ai gagné … »).",s:"Raconte un souvenir d'école.",must:["j'avais","j'ai gagné"],m:"Quand j'avais dix ans, j'ai gagné le concours de dessin de l'école.",e:"Imparfait dựng bối cảnh (tuổi, hoàn cảnh), passé composé kể sự kiện chính. Đây là cách phối hợp hai thì quá khứ khi kể chuyện."}
+]},
+musee:{ name:"Một ngày ở bảo tàng", fr:"Sortie au musée d'Orsay", qs:[
+{t:"fill",k:"fp",q:"Chia động từ ở thì futur proche.",s:"Demain, notre classe ___ (visiter) le musée d'Orsay, à Paris.",acc:["va visiter"],e:"Kế hoạch đã định cho ngày mai: aller ở hiện tại + nguyên mẫu. « Notre classe » là ngôi il/elle nên dùng « va »."},
+{t:"qcm",k:"futur",q:"Chọn dạng futur simple đúng.",s:"Le guide nous ___ l'histoire de ce bâtiment.",o:["racontera","racontrera","racontait","raconteras"],a:0,e:"Raconter là động từ -er đều: nguyên mẫu + -a → il racontera. « Raconteras » là ngôi tu, không hợp với chủ ngữ « le guide »."},
+{t:"fill",k:"present",q:"Chia động từ ở thì hiện tại.",s:"Le musée ___ (ouvrir) ses portes à 9 h 30, sauf le lundi.",acc:["ouvre"],e:"Ouvrir tuy có đuôi -ir nhưng chia như động từ -er: j'ouvre, il ouvre, nous ouvrons. Giờ mở cửa là lịch cố định nên dùng hiện tại."},
+{t:"qcm",k:"imperatif",q:"Hoàn thành tấm biển trong phòng trưng bày.",s:"« Ne ___ pas les tableaux, s'il vous plaît. »",o:["touchez","touchent","touchiez","toucher"],a:0,e:"Lời yêu cầu lịch sự gửi mọi khách tham quan: impératif ngôi vous, phủ định ne... pas bao quanh động từ: Ne touchez pas."},
+{t:"fill",k:"imperatif",q:"Chia động từ ở impératif (ngôi vous).",s:"« ___ (prendre) un audioguide à l'accueil ! » dit la professeure aux élèves.",acc:["prenez"],e:"Impératif lấy dạng hiện tại rồi bỏ chủ ngữ: vous prenez → Prenez. Cô giáo nói với cả nhóm nên dùng vous."},
+{t:"qcm",k:"progressif",q:"Chọn cách diễn đạt hành động đang diễn ra.",s:"Regarde, cet artiste ___ une copie du tableau !",o:["est en train de faire","est en train de faisant","en train de fait","a en train de faire"],a:0,e:"Être + en train de + nguyên mẫu. Ở nhiều bảo tàng lớn của Pháp, họa sĩ được đặt giá vẽ để chép tranh, đúng là cảnh « đang diễn ra » mà cấu trúc này mô tả."},
+{t:"fill",k:"pr",q:"Chia động từ ở thì passé récent.",s:"Dépêche-toi, le groupe ___ (entrer) dans la salle des impressionnistes !",acc:["vient d'entrer"],e:"Venir de + nguyên mẫu. Trước nguyên âm, « de » rút gọn thành « d' »: vient d'entrer."},
+{t:"qcm",k:"present",q:"Chọn dạng hiện tại đúng.",s:"Beaucoup de visiteurs ___ des photos de « La Nuit étoilée » de Van Gogh.",o:["prennent","prenent","prendent","prenons"],a:0,e:"Prendre ở ngôi ils: ils prennent (hai chữ n). « Beaucoup de visiteurs » là chủ ngữ số nhiều."},
+{t:"qcm",k:"imparfait",q:"Chọn thì phù hợp nhất.",s:"Le guide explique : « Autrefois, ce bâtiment ___ une gare. »",o:["était","sera","est","soit"],a:0,e:"Musée d'Orsay vốn là nhà ga Orsay xây cho Triển lãm Thế giới năm 1900, đến năm 1986 mới thành bảo tàng. Miêu tả trạng thái trong quá khứ, nhất là với « autrefois », dùng imparfait."},
+{t:"fill",k:"imparfait",q:"Chia động từ ở thì imparfait.",s:"À l'époque, les trains ___ (arriver) juste sous la grande horloge.",acc:["arrivaient"],e:"Việc lặp đi lặp lại trong quá khứ dùng imparfait. Ngôi ils có đuôi -aient (phát âm giống -ait)."},
+{t:"wr",k:"progressif",q:"Bức tranh vẽ một người phụ nữ đang đọc sách. Miêu tả cảnh này với « être en train de » và động từ « lire ».",s:"Que fait la femme sur ce tableau ?",must:["est en train de lire"],m:"La femme est en train de lire un livre près de la fenêtre.",e:"Miêu tả hành động đang diễn ra trong tranh: elle est en train de lire. Sau « de » là nguyên mẫu lire."},
+{t:"qcm",k:"pc",q:"Chọn đáp án đúng.",s:"Nous ___ au cinquième étage pour voir la grande horloge.",o:["sommes montés","avons monté","sommes monté","montions"],a:0,e:"Monter không có bổ ngữ trực tiếp thì dùng être, phân từ hợp với « nous »: montés. Ở tầng 5 của Orsay có mặt đồng hồ lớn nhìn ra sông Seine."},
+{t:"fill",k:"pc",q:"Chia động từ ở thì passé composé.",s:"Moi, j'___ (voir) les tableaux de Van Gogh pour la première fois.",acc:["ai vu"],e:"Voir dùng avoir, phân từ bất quy tắc là « vu ». Câu đã có « j' » nên chỉ cần điền « ai vu »."},
+{t:"tr",k:"pc",q:"Viết lại câu ở thì passé composé.",s:"Les élèves descendent l'escalier.",acc:["Les élèves ont descendu l'escalier."],e:"Bẫy quen thuộc: descendre thường đi với être, nhưng khi có bổ ngữ trực tiếp (l'escalier) thì dùng avoir và phân từ không hợp với chủ ngữ: ont descendu."},
+{t:"qcm",k:"fa",q:"Chọn thì phù hợp.",s:"Vous pourrez acheter des cartes postales quand vous ___ la visite.",o:["aurez terminé","terminerez","avez terminé","allez terminer"],a:0,e:"Kết thúc chuyến tham quan xảy ra trước việc mua bưu thiếp, cả hai đều ở tương lai: hành động trước dùng futur antérieur (aurez terminé)."},
+{t:"fill",k:"futur",q:"Chia động từ ở thì futur simple.",s:"À midi, nous ___ (pouvoir) pique-niquer dans le jardin des Tuileries.",acc:["pourrons"],e:"Pouvoir có gốc futur pourr- (hai chữ r): je pourrai, nous pourrons. Vườn Tuileries nằm bên kia sông Seine, đối diện Orsay."},
+{t:"qcm",k:"pr",q:"Chọn đáp án phù hợp với ngữ cảnh.",s:"– Où est la prof ? – Elle ___ sortir, elle revient dans deux minutes.",o:["vient de","va","venait de","est en train de"],a:0,e:"Cô vừa đi ra và sẽ quay lại ngay: hành động vừa hoàn tất, dùng passé récent. « Venait de » là passé récent đặt trong quá khứ, dùng khi kể chuyện."},
+{t:"wr",k:"imperatif",q:"Bạn của bạn định ăn bánh mì ngay trong phòng trưng bày. Bảo bạn ấy đừng làm vậy, dùng impératif phủ định với « manger ».",s:"J'ai faim, je mange mon sandwich ici ?",must:["ne mange pas"],m:"Ne mange pas ici, c'est interdit dans les salles !",e:"Ngôi tu của động từ -er ở impératif bỏ -s: mange. Phủ định: ne mange pas."},
+{t:"qcm",k:"imperatif",q:"Lucas muốn cùng các bạn đi xuống quán cà phê. Chọn câu đúng.",s:"« ___ ensemble à la cafétéria ! » propose Lucas.",o:["Allons","Allez","Va","Allant"],a:0,e:"Impératif ngôi nous dùng để rủ rê, có cả người nói: Allons ! « Allez » là bảo các bạn đi còn Lucas thì không."},
+{t:"fill",k:"progressif",q:"Dùng cấu trúc « être en train de » để chia động từ.",s:"Chut ! Le guide ___ (expliquer) la technique du pointillisme.",acc:["est en train d'expliquer"],e:"Être en train de + nguyên mẫu; « de » thành « d' » trước nguyên âm: est en train d'expliquer. Pointillisme là lối vẽ bằng những chấm màu nhỏ của Seurat và Signac."},
+{t:"tr",k:"futur",q:"Viết lại câu ở thì futur simple.",s:"Nous faisons un exposé sur Monet.",acc:["Nous ferons un exposé sur Monet."],e:"Faire có gốc futur fer-, ngôi nous thêm -ons: nous ferons."},
+{t:"qcm",k:"imparfait",q:"Chọn dạng imparfait đúng.",s:"Monet ___ souvent en plein air, au bord de l'eau.",o:["peignait","peindait","peinait","peignera"],a:0,e:"Peindre: nous peignons → gốc imparfait peign-: il peignait. Thói quen trong quá khứ (souvent) dùng imparfait. Monet nổi tiếng vẽ ngoài trời để bắt ánh sáng."},
+{t:"fill",k:"pc",q:"Chia động từ ở thì passé composé.",s:"La peintre Berthe Morisot ___ (naître) en 1841.",acc:["est née"],e:"Naître dùng être, phân từ bất quy tắc « né », hợp giống cái: est née. Berthe Morisot là một trong số ít nữ họa sĩ của nhóm ấn tượng."},
+{t:"qcm",k:"fp",q:"Chọn đáp án đúng.",s:"Regarde l'heure ! Le musée ___ fermer, il faut sortir.",o:["va","vient de","est en train","allait"],a:0,e:"Bảo tàng sắp đóng cửa nên phải ra: futur proche (va fermer). « Est en train » thiếu « de », còn « allait » đặt câu chuyện vào quá khứ."},
+{t:"wr",k:"pc",q:"Mẹ gọi điện hỏi bạn đã mua gì ở cửa hàng lưu niệm. Trả lời bằng passé composé với động từ « acheter ».",s:"Qu'est-ce que tu as acheté à la boutique du musée ?",must:["j'ai acheté"],m:"J'ai acheté un carnet et deux cartes postales.",e:"Acheter dùng avoir: j'ai acheté. Phân từ của động từ -er luôn kết thúc bằng -é."},
+{t:"fill",k:"imparfait",q:"Chia động từ ở thì imparfait.",s:"Pendant que nous ___ (regarder) les sculptures, Lucas s'est perdu.",acc:["regardions"],e:"« Pendant que » giới thiệu hành động đang diễn ra làm nền, dùng imparfait (nous regardions). Sự kiện xen vào (Lucas bị lạc) dùng passé composé."},
+{t:"qcm",k:"imparfait",q:"Chọn cặp động từ đúng.",s:"Quand nous ___ du musée, il ___ à verse.",o:["sommes sortis / pleuvait","sortions / a plu","avons sorti / pleuvait","sommes sortis / pleuvra"],a:0,e:"Sự kiện ra khỏi bảo tàng dùng passé composé với être (sortir không có COD); cơn mưa đang trút xuống là bối cảnh nên dùng imparfait."},
+{t:"fill",k:"fa",q:"Chia động từ ở thì futur antérieur.",s:"Dès que le car ___ (arriver), nous rentrerons au lycée.",acc:["sera arrivé"],e:"Arriver dùng être, nên futur antérieur là être ở futur simple + phân từ: sera arrivé. « Dès que » + futur antérieur: việc này xong là việc kia diễn ra ngay."},
+{t:"tr",k:"pr",q:"Viết lại câu ở thì passé récent.",s:"Nous avons vu une exposition sur la photographie.",acc:["Nous venons de voir une exposition sur la photographie."],e:"Venir de + nguyên mẫu: nous venons de voir. Phân từ « vu » trở về nguyên mẫu « voir »."},
+{t:"qcm",k:"present",q:"Chọn dạng hiện tại đúng.",s:"Tu ___ venir avec nous au musée Rodin samedi ?",o:["veux","veus","voulez","veut"],a:0,e:"Vouloir: je veux, tu veux, il veut. Ngôi je và tu kết thúc bằng -x, giống pouvoir (je peux, tu peux)."},
+{t:"fill",k:"fp",q:"Chia động từ ở futur proche (chú ý vị trí đại từ « y »).",s:"Samedi, je ___ (y retourner) avec mes parents.",acc:["vais y retourner"],e:"Đại từ đứng trước động từ mà nó bổ nghĩa, ở đây là nguyên mẫu: je vais y retourner, không phải « j'y vais retourner »."},
+{t:"wr",k:"futur",q:"Tưởng tượng lần tham quan tới: bạn sẽ xem gì? Trả lời bằng futur simple với « je verrai ».",s:"Que verras-tu la prochaine fois ?",must:["je verrai"],m:"La prochaine fois, je verrai les sculptures de Rodin et les toiles de Monet.",e:"Voir có gốc futur bất quy tắc verr-: je verrai, tu verras. Đừng nhầm với « je voirai »."},
+{t:"qcm",k:"fa",q:"Futur antérieur trong câu sau diễn tả điều gì?",s:"Quand tu auras lu le guide, tu comprendras mieux les tableaux.",o:["Một hành động sẽ hoàn tất trước một hành động khác trong tương lai","Một hành động đang diễn ra trong quá khứ","Một hành động vừa mới xảy ra","Một lời ra lệnh"],a:0,e:"Đọc xong sách hướng dẫn (auras lu) xảy ra trước việc hiểu tranh (comprendras). Futur antérieur luôn gắn với một mốc hoặc hành động khác ở tương lai."},
+{t:"qcm",k:"pc",q:"Chọn câu đúng hoàn toàn.",s:"",o:["Hier, la classe est allée au musée et les élèves se sont bien amusés.","Hier, la classe a allé au musée et les élèves se sont bien amusés.","Hier, la classe est allée au musée et les élèves se sont bien amusé.","Hier, la classe est allé au musée et les élèves se sont bien amusés."],a:0,e:"Aller dùng être và hợp với « la classe » (giống cái): est allée. Động từ đại từ s'amuser cũng dùng être và hợp với « les élèves »: se sont amusés."},
+{t:"wr",k:"pc",q:"Viết một câu tổng kết chuyến đi: imparfait cho không khí (« c'était … ») và passé composé cho điều bạn thích nhất (« j'ai adoré … »).",s:"Alors, cette sortie au musée ?",must:["c'était","j'ai adoré"],m:"C'était une journée magnifique et j'ai adoré la salle des impressionnistes.",e:"« C'était » nêu nhận xét, miêu tả chung (imparfait); « j'ai adoré » nói về một trải nghiệm cụ thể đã trọn vẹn (passé composé)."}
+]}
+};
+
+const SKIN_TEXT = {
+  ecole:{unit:"Bài", map:"Mục lục bài làm", result:"Bulletin", cartel:"", tag:"Giao diện: vở ô li"},
+  musee:{unit:"Phòng", map:"Sơ đồ các phòng trưng bày", result:"Vé tham quan", cartel:"Musée d'Orsay · Niveau A2–B1", tag:"Giao diện: phòng trưng bày"}
+};
+
+/* ---------- state ---------- */
+const KEY = "temps-retrouve-v1";
+let st = load() || {skin:"ecole", screen:"start", i:0, ans:{}, order:{}, filter:"all"};
+function load(){ try{ return JSON.parse(localStorage.getItem(KEY)); }catch(e){ return null; } }
+function save(){ try{ localStorage.setItem(KEY, JSON.stringify(st)); }catch(e){} }
+const QS = () => SETS[st.skin].qs;
+const app = document.getElementById("app");
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+function setSkin(s){ st.skin = s; document.documentElement.setAttribute("data-skin", s); }
+setSkin(st.skin);
+
+function shuffle(n){ const a=[...Array(n).keys()]; for(let i=n-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];} return a; }
+function startNew(){
+  st.ans = {}; st.i = 0; st.order = {}; st.filter = "all";
+  QS().forEach((q,i)=>{ if(q.t==="qcm") st.order[i] = shuffle(q.o.length); });
+  st.screen = "quiz"; save(); render();
+}
+
+/* ---------- grading ---------- */
+function norm(s){
+  return String(s||"").toLowerCase()
+    .replace(/[’`´ʼ]/g,"'").replace(/[«»"“”]/g," ")
+    .replace(/[.,!?;:…]/g," ").replace(/\s*'\s*/g,"'").replace(/\s*-\s*/g,"-")
+    .replace(/\s+/g," ").trim();
+}
+function bare(s){ return s.replace(/œ/g,"oe").normalize("NFD").replace(/[̀-ͯ]/g,""); }
+const SUBJ = /^(je |j'|tu |il |elle |on |nous |vous |ils |elles )/;
+function grade(q, a){
+  if(q.t==="qcm"){ if(a===undefined || a===null) return {p:0,r:"blank"}; return a===q.a ? {p:1,r:"ok"} : {p:0,r:"ko"}; }
+  const n = norm(a); if(!n) return {p:0,r:"blank"};
+  const cands = q.t==="fill" ? [n, n.replace(SUBJ,"")] : [n];
+  let exact=false, loose=false;
+  if(q.must){
+    exact = cands.some(c => q.must.every(m => c.includes(norm(m))));
+    loose = cands.some(c => q.must.every(m => bare(c).includes(bare(norm(m)))));
+  } else {
+    exact = cands.some(c => q.acc.some(x => norm(x)===c));
+    loose = cands.some(c => q.acc.some(x => bare(norm(x))===bare(c)));
+  }
+  if(exact) return {p:1,r:"ok"};
+  if(loose) return {p:.5,r:"half"};
+  return {p:0,r:"ko"};
+}
+const answered = i => { const a = st.ans[i]; return a!==undefined && a!==null && String(a).trim()!==""; };
+
+/* ---------- render ---------- */
+function render(){
+  document.documentElement.setAttribute("data-skin", st.skin);
+  if(st.screen==="quiz") renderQuiz();
+  else if(st.screen==="result") renderResult();
+  else renderStart();
+  save();
+}
+
+function topBar(){
+  return `<div class="top"><div class="brand"><b>Le Temps retrouvé</b><span>Kiểm tra thì tiếng Pháp · A2–B1</span></div><span class="skin-tag">${SKIN_TEXT[st.skin].tag}</span></div>`;
+}
+
+function renderStart(){
+  const inProgress = Object.keys(st.ans).length>0 && st.screen!=="result";
+  const card = (id) => {
+    const S = SETS[id];
+    const desc = id==="ecole" ? "Buổi sáng ở lycée, bài tập về nhà, bạn bè, gia đình và những kỷ niệm thời đi học." : "Chuyến tham quan musée d'Orsay của cả lớp, từ lúc chuẩn bị, trong các phòng tranh đến khi trở về. Giao diện chuyển sang phòng trưng bày.";
+    return `<button class="pc" type="button" data-skin-pick="${id}" aria-pressed="${st.skin===id}">
+      <span class="tick">${st.skin===id?"✓":""}</span>
+      <div class="swatch ${id==="ecole"?"sw-ecole":"sw-musee"}">${id==="musee"?"<i></i><i></i><i></i>":""}</div>
+      <span class="fr">${S.fr}</span><h3>${S.name}</h3><p>${desc}</p></button>`;
+  };
+  app.innerHTML = `${topBar()}
+  <section class="hero fade">
+    <span class="eyebrow">35 câu · 4 dạng bài · khoảng 30 phút</span>
+    <h1>Le Temps retrouvé</h1>
+    <p>Bài kiểm tra về 9 thì và thức của tiếng Pháp. Làm hết một lượt rồi nộp bài: bạn sẽ nhận điểm (thang 35 và thang 20 kiểu Pháp), đáp án, lời giải thích từng câu và bảng tóm tắt cách dùng các thì.</p>
+    <div class="tenses">${Object.values(TENSES).map(t=>`<span>${t.fr}</span>`).join("")}</div>
+  </section>
+  <p class="eyebrow">Chọn chủ đề</p>
+  <div class="parcours">${card("ecole")}${card("musee")}</div>
+  <div class="start-actions">
+    <button class="btn" id="go" type="button">${inProgress?"Làm lại từ đầu":"Bắt đầu làm bài"}</button>
+    ${inProgress?`<button class="btn ghost" id="resume" type="button">Tiếp tục bài đang làm (câu ${st.i+1})</button>`:""}
+  </div>
+  <p class="kbd">Phần tự luận chấm theo đáp án: viết đúng hoàn toàn được 1 điểm, đúng nhưng thiếu dấu (é, è, à…) được nửa điểm.</p>`;
+  app.querySelectorAll("[data-skin-pick]").forEach(b=>b.onclick=()=>{
+    if(b.dataset.skinPick!==st.skin && Object.keys(st.ans).length){ st.ans={}; st.order={}; st.i=0; }
+    setSkin(b.dataset.skinPick); render();
+  });
+  app.querySelector("#go").onclick = startNew;
+  const r = app.querySelector("#resume"); if(r) r.onclick=()=>{ st.screen="quiz"; render(); };
+}
+
+function sentenceHTML(q, i){
+  const s = esc(q.s).replace(/\(([^)]+)\)/g,'<span class="verb">($1)</span>');
+  if(q.t==="fill"){
+    const [a,b] = s.split("___");
+    return `<p class="qsentence">${a}<input id="ans-${i}" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Điền động từ" value="${esc(st.ans[i]||"")}">${b||""}</p>`;
+  }
+  if(!q.s) return "";
+  return `<p class="qsentence">${s.replace(/___/g,'<span class="blank">&nbsp;</span>')}</p>`;
+}
+const ACC = ["é","è","ê","ë","à","â","ç","ù","û","î","ï","ô","œ"];
+
+function renderQuiz(){
+  const qs = QS(), i = st.i, q = qs[i], T = SKIN_TEXT[st.skin];
+  const done = qs.filter((_,k)=>answered(k)).length;
+  let body = "";
+  if(q.t==="qcm"){
+    const ord = st.order[i] || q.o.map((_,k)=>k);
+    body = `<div class="opts" role="radiogroup">${ord.map((oi,pos)=>`<button type="button" class="opt" role="radio" aria-checked="${st.ans[i]===oi}" data-oi="${oi}"><span class="k">${"ABCD"[pos]}</span><span>${esc(q.o[oi])}</span></button>`).join("")}</div>`;
+  } else if(q.t!=="fill"){
+    body = `<textarea class="free" id="ans-${i}" rows="2" spellcheck="false" placeholder="Viết câu trả lời bằng tiếng Pháp…">${esc(st.ans[i]||"")}</textarea>`;
+  }
+  const acc = q.t==="qcm" ? "" : `<div class="accents"><small>Chèn dấu:</small>${ACC.map(c=>`<button type="button" data-c="${c}" tabindex="-1">${c}</button>`).join("")}</div>`;
+  const last = i===qs.length-1;
+  app.innerHTML = `${topBar()}
+  <div class="progress" aria-hidden="true"><i style="width:${done/qs.length*100}%"></i></div>
+  <div class="qmeta"><span class="count">${T.unit} ${i+1} <small>/ ${qs.length}</small></span><span class="muted">Đã làm ${done}/${qs.length}</span></div>
+  <article class="sheet fade" aria-live="polite">
+    <span class="num">${i+1}</span>
+    <div class="cartel"><span>Salle ${String(i+1).padStart(2,"0")}</span><span>${T.cartel}</span></div>
+    <span class="qtype">${TYPE_LABEL[q.t]}</span>
+    <p class="qprompt">${esc(q.q)}${q.t==="fill"?" Chỉ điền phần động từ.":""}</p>
+    ${sentenceHTML(q,i)}
+    ${body}${acc}
+  </article>
+  <div class="nav">
+    <button class="btn ghost" id="prev" type="button" ${i===0?"disabled":""}>Câu trước</button>
+    <div class="right">
+      ${last?"":`<button class="btn" id="next" type="button">Câu tiếp</button>`}
+      <button class="btn ${last?"":"ghost"}" id="submit" type="button">Nộp bài</button>
+    </div>
+  </div>
+  <div id="confirm"></div>
+  <p class="kbd">Phím tắt: Enter để sang câu tiếp, phím 1 đến 4 để chọn đáp án trắc nghiệm.</p>
+  <nav class="map" aria-label="${T.map}"><h3>${T.map}</h3><div class="tiles">${qs.map((_,k)=>`<button type="button" class="tile" data-go="${k}" data-done="${answered(k)?1:0}" aria-current="${k===i}">${k+1}</button>`).join("")}</div></nav>`;
+
+  const input = document.getElementById("ans-"+i);
+  if(input){
+    input.addEventListener("input", ()=>{ st.ans[i]=input.value; save(); updateMeta(); });
+    input.addEventListener("keydown", e=>{ if(e.key==="Enter" && !e.shiftKey){ e.preventDefault(); go(i+1); } });
+    if(window.matchMedia("(pointer:fine)").matches) setTimeout(()=>input.focus({preventScroll:true}),30);
+  }
+  app.querySelectorAll(".opt").forEach(b=>b.onclick=()=>{ st.ans[i]=+b.dataset.oi; render(); });
+  app.querySelectorAll(".accents button").forEach(b=>{
+    b.addEventListener("mousedown", e=>e.preventDefault());
+    b.onclick=()=>{ if(!input) return; const s=input.selectionStart??input.value.length, e2=input.selectionEnd??s;
+      input.value = input.value.slice(0,s)+b.dataset.c+input.value.slice(e2); input.focus(); input.setSelectionRange(s+1,s+1);
+      st.ans[i]=input.value; save(); updateMeta(); };
+  });
+  app.querySelector("#prev").onclick=()=>go(i-1);
+  const nx = app.querySelector("#next"); if(nx) nx.onclick=()=>go(i+1);
+  app.querySelector("#submit").onclick=askSubmit;
+  app.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>go(+b.dataset.go));
+}
+function updateMeta(){
+  const qs=QS(); const done = qs.filter((_,k)=>answered(k)).length;
+  const bar=app.querySelector(".progress i"); if(bar) bar.style.width = done/qs.length*100+"%";
+  const m=app.querySelector(".qmeta .muted"); if(m) m.textContent=`Đã làm ${done}/${qs.length}`;
+  const t=app.querySelector(`.tile[data-go="${st.i}"]`); if(t) t.dataset.done = answered(st.i)?1:0;
+}
+function go(k){ const n=QS().length; if(k<0) return; if(k>=n){ askSubmit(); return; } st.i=k; render(); window.scrollTo({top:0,behavior:"smooth"}); }
+function askSubmit(){
+  const qs=QS(); const left = qs.map((_,k)=>k).filter(k=>!answered(k));
+  if(!left.length){ submit(); return; }
+  const box = document.getElementById("confirm");
+  box.innerHTML = `<div class="confirm fade"><p>Bạn còn <b>${left.length}</b> câu chưa làm (${left.slice(0,10).map(k=>k+1).join(", ")}${left.length>10?"…":""}). Câu bỏ trống sẽ được tính 0 điểm.</p>
+  <div class="start-actions"><button class="btn" type="button" id="yes">Vẫn nộp bài</button><button class="btn ghost" type="button" id="back">Quay lại câu ${left[0]+1}</button></div></div>`;
+  box.querySelector("#yes").onclick=submit;
+  box.querySelector("#back").onclick=()=>go(left[0]);
+  box.scrollIntoView({behavior:"smooth",block:"center"});
+}
+function submit(){ st.screen="result"; st.filter="all"; render(); window.scrollTo({top:0}); }
+
+function mention(n20){
+  if(n20>=16) return ["Très bien","Xuất sắc. Bạn nắm chắc cách dùng và cách chia các thì."];
+  if(n20>=14) return ["Bien","Rất tốt. Xem lại vài câu sai bên dưới là gần như hoàn hảo."];
+  if(n20>=12) return ["Assez bien","Khá. Nền tảng ổn, cần luyện thêm những thì còn yếu."];
+  if(n20>=10) return ["Passable","Đạt. Hãy đọc kỹ phần giải thích và bảng tóm tắt các thì."];
+  return ["Insuffisant","Chưa đạt. Đừng nản: đọc phần giải thích từng câu rồi làm lại bài nhé."];
+}
+function answerText(q,a){
+  if(q.t==="qcm") return (a===undefined||a===null) ? "" : q.o[a];
+  return a||"";
+}
+function correctText(q){
+  if(q.t==="qcm") return q.o[q.a];
+  if(q.m) return q.m;
+  return q.acc[0];
+}
+
+function renderResult(){
+  const qs=QS(), T=SKIN_TEXT[st.skin];
+  const res = qs.map((q,i)=>grade(q,st.ans[i]));
+  const pts = res.reduce((s,r)=>s+r.p,0);
+  const n20 = pts/qs.length*20;
+  const [men, comment] = mention(n20);
+  const cnt = {ok:0,half:0,ko:0,blank:0}; res.forEach(r=>cnt[r.r]++);
+  const by = {}; qs.forEach((q,i)=>{ by[q.k] = by[q.k]||{p:0,n:0}; by[q.k].p+=res[i].p; by[q.k].n++; });
+  const weak = Object.keys(TENSES).filter(k=>by[k] && by[k].p/by[k].n<0.6);
+  const fmt = x => (Math.round(x*10)/10).toString().replace(".",",");
+  const barColor = r => r>=.8?"var(--good)":r>=.6?"var(--accent)":r>=.4?"var(--half)":"var(--bad)";
+  const ring = Math.max(0.02, pts/qs.length);
+  const C = 2*Math.PI*66;
+
+  const items = qs.map((q,i)=>{
+    const r=res[i]; const label = {ok:"Đúng",half:"Thiếu dấu · ½ điểm",ko:"Sai",blank:"Bỏ trống"}[r.r];
+    const cls = r.r==="ok"?"ok":r.r==="half"?"half":"ko";
+    const yours = answerText(q,st.ans[i]);
+    const sent = q.s ? `<p class="s">${esc(q.s)}</p>` : "";
+    const need = q.must ? `<dt>Cần có</dt><dd>${q.must.map(m=>"« "+esc(m)+" »").join(", ")}</dd>` : "";
+    return `<article class="rv" data-res="${r.r}" data-i="${i}">
+      <div class="rv-head"><b>${T.unit} ${i+1}</b><span class="pill ${cls}">${label}</span><span class="pill t">${TENSES[q.k].fr}</span><span class="muted">${TYPE_LABEL[q.t]}</span></div>
+      <p class="muted" style="margin:0;font-size:14.5px">${esc(q.q)}</p>${sent}
+      <dl><dt>Bạn trả lời</dt><dd class="yours">${yours?esc(yours):'<span class="muted">(bỏ trống)</span>'}</dd>
+      ${r.r==="ok"?"":`<dt>${q.m?"Câu mẫu":"Đáp án"}</dt><dd class="right">${esc(correctText(q))}</dd>`}${r.r==="ok"&&q.m?`<dt>Câu mẫu</dt><dd>${esc(q.m)}</dd>`:""}${need}</dl>
+      <p class="why">${esc(q.e)}</p></article>`;
+  }).join("");
+
+  app.innerHTML = `${topBar()}
+  <section class="bulletin fade">
+    <div class="note">
+      <svg viewBox="0 0 150 150" aria-hidden="true"><circle cx="75" cy="75" r="66" fill="none" stroke="var(--line)" stroke-width="6"/>
+      <circle cx="75" cy="75" r="66" fill="none" stroke="var(--mark)" stroke-width="6" stroke-linecap="round" stroke-dasharray="${C*ring} ${C}" transform="rotate(-90 75 75)"/></svg>
+      <div><b>${fmt(n20)}</b><small>/ 20</small></div>
+    </div>
+    <div>
+      <span class="eyebrow">${T.result} · ${SETS[st.skin].name}</span>
+      <h2>${men}</h2>
+      <p>${comment}</p>
+      <div class="stats">
+        <span><b>${fmt(pts)}</b> / ${qs.length} điểm</span>
+        <span><i class="dot" style="background:var(--good)"></i>Đúng <b>${cnt.ok}</b></span>
+        <span><i class="dot" style="background:var(--half)"></i>Thiếu dấu <b>${cnt.half}</b></span>
+        <span><i class="dot" style="background:var(--bad)"></i>Sai <b>${cnt.ko}</b></span>
+        <span><i class="dot" style="background:var(--line)"></i>Bỏ trống <b>${cnt.blank}</b></span>
+      </div>
+    </div>
+  </section>
+
+  <div class="section"><h2>Kết quả theo từng thì</h2></div>
+  <div class="bars">${Object.keys(TENSES).filter(k=>by[k]).map(k=>{const r=by[k].p/by[k].n;return `<div class="bar"><span>${TENSES[k].fr}</span><span class="track"><i style="width:${Math.max(r*100,2)}%;background:${barColor(r)}"></i></span><span class="v">${fmt(by[k].p)}/${by[k].n}</span></div>`;}).join("")}
+    <p class="advice">${weak.length?`Nên ôn lại trước: <b>${weak.map(k=>TENSES[k].fr).join(", ")}</b>. Mở các mục tương ứng trong bảng tóm tắt bên dưới.`:"Không có thì nào dưới 60%. Rất vững!"}</p>
+  </div>
+
+  <div class="section"><h2>Tóm tắt các thì</h2><span class="muted">Bấm để mở</span></div>
+  <div class="memo">${Object.entries(TENSES).map(([k,t])=>`<details ${weak.includes(k)?"open":""}><summary><span>${t.fr} <em>· ${t.vi}</em></span></summary><div class="body"><p><b>Cách chia.</b> ${t.f}</p><p><b>Khi nào dùng.</b> ${t.u}</p><p class="ex">${t.ex}</p></div></details>`).join("")}</div>
+
+  <div class="section"><h2>Đáp án và giải thích</h2>
+    <div class="filters" role="group" aria-label="Lọc câu">
+      <button type="button" data-f="all" aria-pressed="${st.filter==="all"}">Tất cả (${qs.length})</button>
+      <button type="button" data-f="wrong" aria-pressed="${st.filter==="wrong"}">Cần xem lại (${qs.length-cnt.ok})</button>
+      <button type="button" data-f="ok" aria-pressed="${st.filter==="ok"}">Câu đúng (${cnt.ok})</button>
+    </div></div>
+  <div class="review" id="review">${items}</div>
+
+  <nav class="map" aria-label="${T.map}"><h3>Tổng quan bài làm</h3><div class="tiles">${res.map((r,k)=>`<button type="button" class="tile" data-jump="${k}" data-res="${r.r==="blank"?"ko":r.r}">${k+1}</button>`).join("")}</div></nav>
+
+  <div class="end-actions">
+    <button class="btn" id="again" type="button">Làm lại chủ đề này</button>
+    <button class="btn ghost" id="switch" type="button">Thử chủ đề ${st.skin==="ecole"?"bảo tàng":"trường học"}</button>
+  </div>`;
+
+  const applyFilter=()=>{ app.querySelectorAll(".rv").forEach(el=>{ const r=el.dataset.res; el.hidden = st.filter==="wrong" ? r==="ok" : st.filter==="ok" ? r!=="ok" : false; }); };
+  applyFilter();
+  app.querySelectorAll("[data-f]").forEach(b=>b.onclick=()=>{ st.filter=b.dataset.f; save(); app.querySelectorAll("[data-f]").forEach(x=>x.setAttribute("aria-pressed", x===b)); applyFilter(); });
+  app.querySelectorAll("[data-jump]").forEach(b=>b.onclick=()=>{ st.filter="all"; app.querySelectorAll("[data-f]").forEach(x=>x.setAttribute("aria-pressed", x.dataset.f==="all")); applyFilter(); const el=app.querySelector(`.rv[data-i="${b.dataset.jump}"]`); if(el) el.scrollIntoView({behavior:"smooth",block:"start"}); });
+  app.querySelector("#again").onclick=()=>{ startNew(); window.scrollTo({top:0}); };
+  app.querySelector("#switch").onclick=()=>{ setSkin(st.skin==="ecole"?"musee":"ecole"); st.ans={}; st.order={}; st.i=0; st.screen="start"; render(); window.scrollTo({top:0}); };
+}
+
+document.addEventListener("keydown", e=>{
+  if(st.screen!=="quiz") return;
+  const tag = (e.target.tagName||"").toLowerCase();
+  if(tag==="input"||tag==="textarea") return;
+  const q = QS()[st.i];
+  if(q.t==="qcm" && /^[1-4]$/.test(e.key)){ const ord=st.order[st.i]||q.o.map((_,k)=>k); const oi=ord[+e.key-1]; if(oi!==undefined){ st.ans[st.i]=oi; render(); } }
+  else if(e.key==="Enter" && tag!=="button"){ go(st.i+1); }
+});
+
+render();
+</script>
+
+</body>
+</html>
